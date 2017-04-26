@@ -10,7 +10,7 @@ RUN apt-get update && \
 		http://download.oracle.com/otn-pub/java/jce/8/jce_policy-8.zip \
 		-o /tmp/jce_policy-8.zip && \
 	unzip /tmp/jce_policy-8.zip -d /tmp && \
-	cp -v /tmp/UnlimitedJCEPolicyJDK8/*.jar "${JAVA_HOME}"/jre/lib/security/ && \
+	cp -v /tmp/UnlimitedJCEPolicyJDK8/*.jar "${JRE_HOME}"/lib/security/ && \
 	apt-get remove --purge --auto-remove -y unzip && \
 	apt-get autoclean && apt-get --purge -y autoremove && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
