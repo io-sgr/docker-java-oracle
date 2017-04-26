@@ -3,9 +3,10 @@ MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-ENV VERSION 7
-ENV UPDATE 80
-ENV BUILD 15
+ENV VERSION 8
+ENV UPDATE 131
+ENV BUILD 11
+ENV SIG d54c1d3a095b4ff2b6607d096fa80163
 
 ENV JAVA_HOME /usr/lib/jvm/java-${VERSION}-oracle
 
@@ -13,7 +14,7 @@ RUN apt-get update && apt-get install ca-certificates curl \
 	-y --no-install-recommends && \
 	curl --silent --location --retry 3 --cacert /etc/ssl/certs/GeoTrust_Global_CA.pem \
 	--header "Cookie: oraclelicense=accept-securebackup-cookie;" \
-	http://download.oracle.com/otn-pub/java/jdk/"${VERSION}"u"${UPDATE}"-b"${BUILD}"/jdk-"${VERSION}"u"${UPDATE}"-linux-x64.tar.gz \
+	http://download.oracle.com/otn-pub/java/jdk/"${VERSION}"u"${UPDATE}"-b"${BUILD}"/"${SIG}"/jdk-"${VERSION}"u"${UPDATE}"-linux-x64.tar.gz \
 	| tar xz -C /tmp && \
 	mkdir -p /usr/lib/jvm && mv /tmp/jdk1.${VERSION}.0_${UPDATE} "${JAVA_HOME}" && \
 	apt-get autoclean && apt-get --purge -y autoremove && \
