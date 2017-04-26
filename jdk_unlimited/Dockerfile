@@ -1,4 +1,4 @@
-FROM sgrio/java-oracle:jdk_7
+FROM sgrio/java-oracle:jdk_8
 MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -7,9 +7,9 @@ RUN apt-get update && \
 	apt-get install unzip -y --no-install-recommends && \
 	curl --silent --location --retry 3 --cacert /etc/ssl/certs/GeoTrust_Global_CA.pem \
 	--header "Cookie: oraclelicense=accept-securebackup-cookie;" \
-	http://download.oracle.com/otn-pub/java/jce/7/UnlimitedJCEPolicyJDK7.zip -o /tmp/UnlimitedJCEPolicyJDK7.zip && \
-	unzip /tmp/UnlimitedJCEPolicyJDK7.zip -d /tmp && \
-	cp -v /tmp/UnlimitedJCEPolicy/*.jar "${JAVA_HOME}"/jre/lib/security/ && \
+	http://download.oracle.com/otn-pub/java/jce/8/jce_policy-8.zip && \
+	unzip /tmp/jce_policy-8.zip -d /tmp && \
+	cp -v /tmp/UnlimitedJCEPolicyJDK8/*.jar "${JAVA_HOME}"/jre/lib/security/ && \
 	apt-get remove --purge --auto-remove -y unzip && \
 	apt-get autoclean && apt-get --purge -y autoremove && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
