@@ -23,11 +23,14 @@ To use this image, you must accept the [Oracle Binary Code License Agreement](ht
 
 * Java 7
   * `server_jre_7`: based on `Oracle Java SE Server Runtime Environment 7 update 80 build 15`
+  * `server_jre_7_unlimited`: based on `Oracle Java SE Server Runtime Environment 7 update 80 build 15` with JCE
   * `jre_7`: based on `Oracle Java SE Runtime Environment 7 update 80 build 15`
+  * `jre_7_unlimited`: based on `Oracle Java SE Runtime Environment 7 update 80 build 15` with JCE
   * `jdk_7`: based on `Oracle Java SE Development Kit 7 update 80 build 15`
+  * `jdk_7_unlimited`: based on `Oracle Java SE Development Kit 7 update 80 build 15` with JCE
 
-* Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files (for Java 1.8 update 152 and older)
-  You can always apply tailing `_unlimited` to the tags older than Java 1.8 update 152 if you want a patched version, for example `server_jre_8_unlimited`.
+* Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files
+  * This is enabled by defualt in Java 9, and Java 8 updates later than 162.
 
 ### Installation
 
