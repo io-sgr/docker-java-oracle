@@ -30,7 +30,7 @@ To use this image, you must accept the [Oracle Binary Code License Agreement](ht
   * `jdk_7_unlimited`: based on `Oracle Java SE Development Kit 7 update 80 build 15` with JCE
 
 * Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files
-  This is enabled by defualt in Java 9, and Java 8 updates later than 162.
+  * This is enabled by defualt in Java 9, and Java 8 updates later than 162.
 
 ### Installation
 
