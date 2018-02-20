@@ -12,14 +12,14 @@ To use this image, you must accept the [Oracle Binary Code License Agreement](ht
   * `latest`: pointed to `sgrio/java-oracle:server_jre_9`
 
 * Java 9
-  * `server_jre_9`: based on `Oracle Java SE Server Runtime Environment 9.0.1+11`
-  * `jre_9`: based on `Oracle Java SE Runtime Environment 9.0.1+11`
-  * `jdk_9`: based on `Oracle Java SE Development Kit 9.0.1+11`
+  * `server_jre_9`: based on `Oracle Java SE Server Runtime Environment 9.0.4+11`
+  * `jre_9`: based on `Oracle Java SE Runtime Environment 9.0.4+11`
+  * `jdk_9`: based on `Oracle Java SE Development Kit 9.0.4+11`
 
 * Java 8
-  * `server_jre_8`: based on `Oracle Java SE Server Runtime Environment 8 update 152 build 16`
-  * `jre_8`: based on `Oracle Java SE Runtime Environment 8 update 152 build 16`
-  * `jdk_8`: based on `Oracle Java SE Development Kit 8 update 152 build 16`
+  * `server_jre_8`: based on `Oracle Java SE Server Runtime Environment 8 update 162 build 12`
+  * `jre_8`: based on `Oracle Java SE Runtime Environment 8 update 162 build 12`
+  * `jdk_8`: based on `Oracle Java SE Development Kit 8 update 162 build 12`
 
 * Java 7
   * `server_jre_7`: based on `Oracle Java SE Server Runtime Environment 7 update 80 build 15`
