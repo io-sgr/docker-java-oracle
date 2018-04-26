@@ -17,9 +17,9 @@ To use this image, you must accept the [Oracle Binary Code License Agreement](ht
   * `jdk_9`: based on `Oracle Java SE Development Kit 9.0.4+11`
 
 * Java 8
-  * `server_jre_8`: based on `Oracle Java SE Server Runtime Environment 8 update 162 build 12`
-  * `jre_8`: based on `Oracle Java SE Runtime Environment 8 update 162 build 12`
-  * `jdk_8`: based on `Oracle Java SE Development Kit 8 update 162 build 12`
+  * `server_jre_8`: based on `Oracle Java SE Server Runtime Environment 8 update 171 build 11`
+  * `jre_8`: based on `Oracle Java SE Runtime Environment 8 update 171 build 11`
+  * `jdk_8`: based on `Oracle Java SE Development Kit 8 update 171 build 11`
 
 * Java 7
   * `server_jre_7`: based on `Oracle Java SE Server Runtime Environment 7 update 80 build 15`
