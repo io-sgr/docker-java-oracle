@@ -1,27 +1,24 @@
-FROM sgrio/ubuntu-base
+FROM ubuntu:latest
 MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
 ENV DEBIAN_FRONTEND noninteractive
-
-ENV VERSION 8
-ENV UPDATE 172
-ENV BUILD 11
-ENV SIG a58eab1ec242421181065cdc37240b08
-
-ENV JAVA_HOME /usr/lib/jvm/java-${VERSION}-oracle
+ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 ENV JRE_HOME ${JAVA_HOME}
 
-RUN apt-get update && apt-get install ca-certificates curl \
-        -y --no-install-recommends && \
+RUN VERSION=8 && \
+        UPDATE=172 && \
+        BUILD=11 && \
+        SIG=a58eab1ec242421181065cdc37240b08 && \
+        apt-get update && apt-get dist-upgrade -y && \
+        apt-get install apt-utils ca-certificates curl -y --no-install-recommends && \
 	curl --silent --location --retry 3 --cacert /etc/ssl/certs/GeoTrust_Global_CA.pem \
 	--header "Cookie: oraclelicense=accept-securebackup-cookie;" \
 	http://download.oracle.com/otn-pub/java/jdk/"${VERSION}"u"${UPDATE}"-b"${BUILD}"/"${SIG}"/jre-"${VERSION}"u"${UPDATE}"-linux-x64.tar.gz \
 	| tar xz -C /tmp && \
 	mkdir -p /usr/lib/jvm && mv /tmp/jre1.${VERSION}.0_${UPDATE} "${JAVA_HOME}" && \
 	apt-get autoclean && apt-get --purge -y autoremove && \
-	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-RUN update-alternatives --install "/usr/bin/java" "java" "${JRE_HOME}/bin/java" 1 && \
+	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+        update-alternatives --install "/usr/bin/java" "java" "${JRE_HOME}/bin/java" 1 && \
 	update-alternatives --install "/usr/bin/javaws" "javaws" "${JRE_HOME}/bin/javaws" 1 && \
 	update-alternatives --set java "${JAVA_HOME}/bin/java" && \
 	update-alternatives --set javaws "${JAVA_HOME}/bin/javaws"
