@@ -9,23 +9,24 @@ To use this image, you must accept the [Oracle Binary Code License Agreement](ht
 `sgrio/java-oracle` provides several tagged images:
 
 * Default
-  * `latest`: pointed to `sgrio/java-oracle:server_jre_9`
-
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle.svg)](https://microbadger.com/images/sgrio/java-oracle) `latest`: pointed to `sgrio/java-oracle:server_jre_9`
 * Java 10
-  * `server_jre_10`: based on `Oracle Java SE Server Runtime Environment 10.0.1+10`
-  * `jre_10`: based on `Oracle Java SE Runtime Environment 10.0.1+10`
-  * `jdk_10`: based on `Oracle Java SE Development Kit 10.0.1+10`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:server_jre_10.svg)](https://microbadger.com/images/sgrio/java-oracle:server_jre_10) `server_jre_10`: based on `Oracle Java SE Server Runtime Environment 10.0.1 build 10`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jre_10.svg)](https://microbadger.com/images/sgrio/java-oracle:jre_10) `jre_10`: based on `Oracle Java SE Runtime Environment 10.0.1 build 10`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_10.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_10) `jdk_10`: based on `Oracle Java SE Development Kit 10.0.1 build 10`
+* Java 8
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:server_jre_8.svg)](https://microbadger.com/images/sgrio/java-oracle:server_jre_8) `server_jre_8`: based on `Oracle Java SE Server Runtime Environment 8 update 172 build 11`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jre_8.svg)](https://microbadger.com/images/sgrio/java-oracle:jre_8) `jre_8`: based on `Oracle Java SE Runtime Environment 8 update 172 build 11`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_8.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_8) `jdk_8`: based on `Oracle Java SE Development Kit 8 update 172 build 11`
+
+### Docker Tags (Archived)
+
+The following tags are archived:
 
 * Java 9
-  * `server_jre_9`: based on `Oracle Java SE Server Runtime Environment 9.0.4+11`
-  * `jre_9`: based on `Oracle Java SE Runtime Environment 9.0.4+11`
-  * `jdk_9`: based on `Oracle Java SE Development Kit 9.0.4+11`
-
-* Java 8
-  * `server_jre_8`: based on `Oracle Java SE Server Runtime Environment 8 update 172 build 11`
-  * `jre_8`: based on `Oracle Java SE Runtime Environment 8 update 172 build 11`
-  * `jdk_8`: based on `Oracle Java SE Development Kit 8 update 172 build 11`
-
+  * `server_jre_9`: based on `Oracle Java SE Server Runtime Environment 9.0.4 build 11`
+  * `jre_9`: based on `Oracle Java SE Runtime Environment 9.0.4 build 11`
+  * `jdk_9`: based on `Oracle Java SE Development Kit 9.0.4 build 11`
 * Java 7
   * `server_jre_7`: based on `Oracle Java SE Server Runtime Environment 7 update 80 build 15`
   * `server_jre_7_unlimited`: based on `Oracle Java SE Server Runtime Environment 7 update 80 build 15` with JCE
