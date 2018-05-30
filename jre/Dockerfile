@@ -1,13 +1,13 @@
 FROM ubuntu:latest
 MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
-ENV DEBIAN_FRONTEND noninteractive
-ENV JAVA_HOME /usr/lib/jvm/java-${VERSION}-oracle
+ENV DEBIAN_FRONTEND noninteractive \
+    VERSION 10.0.1 \
+    BUILD 10 \
+    SIG fb4372174a714e6b8c52526dc134031e \
+    JAVA_HOME /usr/lib/jvm/java-${VERSION}-oracle
 
-RUN VERSION=10.0.1 && \
-	BUILD=10 && \
-	SIG=fb4372174a714e6b8c52526dc134031e && \
-	apt-get update && apt-get dist-upgrade -y && \
+RUN apt-get update && apt-get dist-upgrade -y && \
 	apt-get install apt-utils ca-certificates curl -y --no-install-recommends && \
 	curl --silent --location --retry 3 --cacert /etc/ssl/certs/GeoTrust_Global_CA.pem \
 	    --header "Cookie: oraclelicense=accept-securebackup-cookie;" \
