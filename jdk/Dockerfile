@@ -4,9 +4,9 @@ MAINTAINER SgrAlpha <admin@mail.sgr.io>
 ENV DEBIAN_FRONTEND=noninteractive \
     JAVA_HOME=/usr/lib/jvm/java-10-oracle
 
-RUN VERSION=10.0.2 \
-    BUILD=13 \
-    SIG=19aef61b38124481863b1413dce1855f \
+RUN VERSION=10.0.2 && \
+    BUILD=13 && \
+    SIG=19aef61b38124481863b1413dce1855f && \
     apt-get update && apt-get dist-upgrade -y && \
     apt-get install apt-utils ca-certificates curl -y --no-install-recommends && \
     curl --silent --location --retry 3 --cacert /etc/ssl/certs/GeoTrust_Global_CA.pem \
