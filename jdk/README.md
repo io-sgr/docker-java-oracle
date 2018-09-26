@@ -1,4 +1,4 @@
-## Docker images of Java 7/8/9/10 provided by Oracle on top of Ubuntu
+## Docker images of Java 7/8/9/10/11 provided by Oracle on top of Ubuntu
 
 This repository contains **Dockerfile** of [Java SE](http://java.oracle.com/) for [Docker](https://www.docker.com/)'s [automated build](https://hub.docker.com/r/sgrio/java-oracle/) published to the public [Docker Hub](https://hub.docker.com/).
 
@@ -9,11 +9,9 @@ To use this image, you must accept the [Oracle Binary Code License Agreement](ht
 `sgrio/java-oracle` provides several tagged images:
 
 * Default
-  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle.svg)](https://microbadger.com/images/sgrio/java-oracle) `latest`: pointed to `sgrio/java-oracle:server_jre_10`
-* Java 10
-  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:server_jre_10.svg)](https://microbadger.com/images/sgrio/java-oracle:server_jre_10) `server_jre_10`: based on `Oracle Java SE Server Runtime Environment 10.0.2 build 13`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jre_10.svg)](https://microbadger.com/images/sgrio/java-oracle:jre_10) `jre_10`: based on `Oracle Java SE Runtime Environment 10.0.2 build 13`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_10.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_10) `jdk_10`: based on `Oracle Java SE Development Kit 10.0.2 build 13`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle.svg)](https://microbadger.com/images/sgrio/java-oracle) `latest`: pointed to `sgrio/java-oracle:jdk_11`
+* Java 11
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_11.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_11) `jdk_11`: based on `Oracle Java SE Development Kit 11 build 28`
 * Java 8
   * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:server_jre_8.svg)](https://microbadger.com/images/sgrio/java-oracle:server_jre_8) `server_jre_8`: based on `Oracle Java SE Server Runtime Environment 8 update 181 build 13`
   * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jre_8.svg)](https://microbadger.com/images/sgrio/java-oracle:jre_8) `jre_8`: based on `Oracle Java SE Runtime Environment 8 update 181 build 13`
@@ -23,6 +21,10 @@ To use this image, you must accept the [Oracle Binary Code License Agreement](ht
 
 The following tags are archived:
 
+* Java 10
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:server_jre_10.svg)](https://microbadger.com/images/sgrio/java-oracle:server_jre_10) `server_jre_10`: based on `Oracle Java SE Server Runtime Environment 10.0.2 build 13`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jre_10.svg)](https://microbadger.com/images/sgrio/java-oracle:jre_10) `jre_10`: based on `Oracle Java SE Runtime Environment 10.0.2 build 13`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_10.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_10) `jdk_10`: based on `Oracle Java SE Development Kit 10.0.2 build 13`
 * Java 9
   * `server_jre_9`: based on `Oracle Java SE Server Runtime Environment 9.0.4 build 11`
   * `jre_9`: based on `Oracle Java SE Runtime Environment 9.0.4 build 11`
