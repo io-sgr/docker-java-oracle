@@ -2,11 +2,11 @@ FROM ubuntu:latest
 MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
 ENV DEBIAN_FRONTEND=noninteractive \
-    JAVA_HOME=/usr/lib/jvm/java-10-oracle
+    JAVA_HOME=/usr/lib/jvm/java-11-oracle
 
-RUN VERSION=10.0.2 && \
-    BUILD=13 && \
-    SIG=19aef61b38124481863b1413dce1855f && \
+RUN VERSION=11 && \
+    BUILD=28 && \
+    SIG=55eed80b163941c8885ad9298e6d786a && \
     apt-get update && apt-get dist-upgrade -y && \
     apt-get install apt-utils ca-certificates curl -y --no-install-recommends && \
     curl --silent --location --retry 3 --cacert /etc/ssl/certs/GeoTrust_Global_CA.pem \
@@ -17,8 +17,6 @@ RUN VERSION=10.0.2 && \
     apt-get autoclean && apt-get --purge -y autoremove && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     update-alternatives --install "/usr/bin/java" "java" "${JAVA_HOME}/bin/java" 1 && \
-    update-alternatives --install "/usr/bin/javaws" "javaws" "${JAVA_HOME}/bin/javaws" 1 && \
     update-alternatives --install "/usr/bin/javac" "javac" "${JAVA_HOME}/bin/javac" 1 && \
     update-alternatives --set java "${JAVA_HOME}/bin/java" && \
-    update-alternatives --set javaws "${JAVA_HOME}/bin/javaws" && \
     update-alternatives --set javac "${JAVA_HOME}/bin/javac"
