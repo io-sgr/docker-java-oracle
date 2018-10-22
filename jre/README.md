@@ -13,9 +13,9 @@ To use this image, you must accept the [Oracle Binary Code License Agreement](ht
 * Java 11
   * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_11.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_11) `jdk_11`: based on `Oracle Java SE Development Kit 11 build 28`
 * Java 8
-  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:server_jre_8.svg)](https://microbadger.com/images/sgrio/java-oracle:server_jre_8) `server_jre_8`: based on `Oracle Java SE Server Runtime Environment 8 update 181 build 13`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jre_8.svg)](https://microbadger.com/images/sgrio/java-oracle:jre_8) `jre_8`: based on `Oracle Java SE Runtime Environment 8 update 181 build 13`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_8.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_8) `jdk_8`: based on `Oracle Java SE Development Kit 8 update 181 build 13`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:server_jre_8.svg)](https://microbadger.com/images/sgrio/java-oracle:server_jre_8) `server_jre_8`: based on `Oracle Java SE Server Runtime Environment 8 update 192 build 12`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jre_8.svg)](https://microbadger.com/images/sgrio/java-oracle:jre_8) `jre_8`: based on `Oracle Java SE Runtime Environment 8 update 192 build 12`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_8.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_8) `jdk_8`: based on `Oracle Java SE Development Kit 8 update 192 build 12`
 
 ### Docker Tags (Archived)
 
