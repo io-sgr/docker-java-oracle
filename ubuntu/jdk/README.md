@@ -1,6 +1,8 @@
-## Docker images of Java 7/8/9/10/11 provided by Oracle on top of Ubuntu
+## Docker images of Java 7/8/9/10/11 provided by Oracle
 
 This repository contains **Dockerfile** of [Java SE](http://java.oracle.com/) for [Docker](https://www.docker.com/)'s [automated build](https://hub.docker.com/r/sgrio/java-oracle/) published to the public [Docker Hub](https://hub.docker.com/).
+
+The default image is on top of Ubuntu, to use images based on Alpine Linux, add `_alpine` after the tag name.
 
 To use this image, you must accept the [Oracle Binary Code License Agreement](http://www.oracle.com/technetwork/java/javase/terms/license/index.html) for Java SE.
 
@@ -10,8 +12,10 @@ To use this image, you must accept the [Oracle Binary Code License Agreement](ht
 
 * Default
   * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle.svg)](https://microbadger.com/images/sgrio/java-oracle) `latest`: pointed to `sgrio/java-oracle:jdk_11`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:latest_alpine.svg)](https://microbadger.com/images/sgrio/java-oracle:latest_alpine) `latest_alpine`: pointed to `sgrio/java-oracle:jdk_11_alpine`
 * Java 11
-  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_11.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_11) `jdk_11`: based on `Oracle Java SE Development Kit 11.0.1 build 13`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_11.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_11) `jdk_11`: `Oracle Java SE Development Kit 11.0.1 build 13` on top of Ubuntu
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_11_alpine.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_11_alpine) `jdk_11_alpine`: `Oracle Java SE Development Kit 11.0.1 build 13` on top of Alpine
 * Java 8
   * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:server_jre_8.svg)](https://microbadger.com/images/sgrio/java-oracle:server_jre_8) `server_jre_8`: based on `Oracle Java SE Server Runtime Environment 8 update 192 build 12`
   * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jre_8.svg)](https://microbadger.com/images/sgrio/java-oracle:jre_8) `jre_8`: based on `Oracle Java SE Runtime Environment 8 update 192 build 12`
