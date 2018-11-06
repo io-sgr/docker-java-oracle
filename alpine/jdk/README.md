@@ -2,7 +2,7 @@
 
 This repository contains **Dockerfile** of [Java SE](http://java.oracle.com/) for [Docker](https://www.docker.com/)'s [automated build](https://hub.docker.com/r/sgrio/java-oracle/) published to the public [Docker Hub](https://hub.docker.com/).
 
-The default image is on top of **Ubuntu**, to use images based on **Alpine Linux**, add `_alpine` after the tag name.
+The default image is on top of **Ubuntu**, to use images based on **CentOS**, add `_centos` after the tag name, and similar for **Alpine Linux** based images, add `_alpine`. Please DO aware that, Alpine Linux is **NOT** a part of [Oracle JDK 11 Certified System](https://www.oracle.com/technetwork/java/javase/documentation/jdk11certconfig-5069638.html), use it at your own risk.
 
 To use this image, you must accept the [Oracle Binary Code License Agreement](http://www.oracle.com/technetwork/java/javase/terms/license/index.html) for Java SE.
 
@@ -12,9 +12,13 @@ To use this image, you must accept the [Oracle Binary Code License Agreement](ht
 
 * Default
   * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle.svg)](https://microbadger.com/images/sgrio/java-oracle) **latest**: pointed to `sgrio/java-oracle:jdk_11`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:latest_ubuntu.svg)](https://microbadger.com/images/sgrio/java-oracle:latest_ubuntu) **latest_ubuntu**: pointed to `sgrio/java-oracle:jdk_11_ubuntu`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:latest_centos.svg)](https://microbadger.com/images/sgrio/java-oracle:latest_centos) **latest_centos**: pointed to `sgrio/java-oracle:jdk_11_centos`
   * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:latest_alpine.svg)](https://microbadger.com/images/sgrio/java-oracle:latest_alpine) **latest_alpine**: pointed to `sgrio/java-oracle:jdk_11_alpine`
 * Java 11
-  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_11.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_11) **jdk_11**: `Oracle Java SE Development Kit 11.0.1 build 13` on top of **Ubuntu**
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_11.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_11) **jdk_11**: pointed to `jdk_11_ubuntu`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_11_ubuntu.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_11_ubuntu) **jdk_11_ubuntu**: `Oracle Java SE Development Kit 11.0.1 build 13` on top of **Ubuntu**
+  * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_11_centos.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_11_centos) **jdk_11_centos**: `Oracle Java SE Development Kit 11.0.1 build 13` on top of **CentOS**
   * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:jdk_11_alpine.svg)](https://microbadger.com/images/sgrio/java-oracle:jdk_11_alpine) **jdk_11_alpine**: `Oracle Java SE Development Kit 11.0.1 build 13` on top of **Alpine Linux**
 * Java 8
   * [![](https://images.microbadger.com/badges/image/sgrio/java-oracle:server_jre_8.svg)](https://microbadger.com/images/sgrio/java-oracle:server_jre_8) **server_jre_8**: `Oracle Java SE Server Runtime Environment 8 update 192 build 12` on top of **Ubuntu**
