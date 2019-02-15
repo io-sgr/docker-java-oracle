@@ -2,9 +2,13 @@
 
 ### Due to DMCA, images have been removed from DockerHub, I will continue to maintain this repo, but you will have to build it by your own, thanks for using!
 
-The default image is on top of **Ubuntu**, to use images based on **CentOS**, add `_centos` after the tag name, and similar for **Alpine Linux** based images, add `_alpine`. Please DO aware that, Alpine Linux is **NOT** a part of [Oracle JDK 11 Certified System](https://www.oracle.com/technetwork/java/javase/documentation/jdk11certconfig-5069638.html), use it at your own risk.
+### Build Images
 
-To use this image, you must accept the [Oracle Binary Code License Agreement](http://www.oracle.com/technetwork/java/javase/terms/license/index.html) for Java SE.
+1. Install [Docker](https://www.docker.com/).
+
+2. Go to `<os>/jdk/`, run `docker build -t <image_name:tag> .`, you can use your favorite image and tag name.
+
+3. Test the image you built, `docker run -it --rm <image_name:tag> java -version`.
 
 ### Docker Tags
 
@@ -50,10 +54,4 @@ The following tags are archived:
 
 * Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files
   * This is enabled by defualt in Java 9, and Java 8 updates later than 162.
-
-### Installation
-
-1. Install [Docker](https://www.docker.com/).
-
-2. Go inside each folder and build images, you can use your favorite names and tags.
 
