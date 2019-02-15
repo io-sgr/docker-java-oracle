@@ -1,6 +1,6 @@
 ## Docker images of Java 7/8/9/10/11 provided by Oracle
 
-This repository contains **Dockerfile** of [Java SE](http://java.oracle.com/) for [Docker](https://www.docker.com/)'s [automated build](https://hub.docker.com/r/sgrio/java-oracle/) published to the public [Docker Hub](https://hub.docker.com/).
+### Due to DMCA, images have been removed from DockerHub, I will continue to maintain this repo, but you will have to build it by your own, thanks for using!
 
 The default image is on top of **Ubuntu**, to use images based on **CentOS**, add `_centos` after the tag name, and similar for **Alpine Linux** based images, add `_alpine`. Please DO aware that, Alpine Linux is **NOT** a part of [Oracle JDK 11 Certified System](https://www.oracle.com/technetwork/java/javase/documentation/jdk11certconfig-5069638.html), use it at your own risk.
 
@@ -55,9 +55,5 @@ The following tags are archived:
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Pull [image](https://hub.docker.com/r/sgrio/java-oracle/) from public [Docker Hub](https://hub.docker.com/): `docker pull sgrio/java-oracle`
-
-### Usage
-
-    docker run -it --rm sgrio/java-oracle java -version
+2. Go inside each folder and build images, you can use your favorite names and tags.
 
