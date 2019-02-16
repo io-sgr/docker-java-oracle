@@ -3,7 +3,7 @@ MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
 ENV JAVA_HOME=/usr/lib/jvm/java-11-oracle \
     PATH="/usr/lib/jvm/java-11-oracle/bin:$PATH"
-http://download.oracle.com/otn-pub/java/jdk/11.0.2+9/f51449fcd52f4d52b93a989c5c56ed3c/jdk-11.0.2_linux-x64_bin.tar.gz
+
 RUN GLIBC_VERSION=2.28-r0 && \
     GCC_LIBS_VERSION=8.2.0-2 && \
     ZLIB_VERSION=1.2.9-1 && \
