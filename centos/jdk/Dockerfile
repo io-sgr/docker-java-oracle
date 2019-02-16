@@ -4,9 +4,9 @@ MAINTAINER SgrAlpha <admin@mail.sgr.io>
 ENV DEBIAN_FRONTEND=noninteractive \
     JAVA_HOME=/usr/lib/jvm/java-11-oracle
 
-RUN VERSION=11.0.1 && \
-    BUILD=13 && \
-    SIG=90cf5d8f270a4347a95050320eef3fb7 && \
+RUN VERSION=11.0.2 && \
+    BUILD=9 && \
+    SIG=f51449fcd52f4d52b93a989c5c56ed3c && \
     yum -y update && \
     curl --silent --location --retry 3 \
         --header "Cookie: oraclelicense=accept-securebackup-cookie;" \

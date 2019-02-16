@@ -3,13 +3,13 @@ MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
 ENV JAVA_HOME=/usr/lib/jvm/java-11-oracle \
     PATH="/usr/lib/jvm/java-11-oracle/bin:$PATH"
-
+http://download.oracle.com/otn-pub/java/jdk/11.0.2+9/f51449fcd52f4d52b93a989c5c56ed3c/jdk-11.0.2_linux-x64_bin.tar.gz
 RUN GLIBC_VERSION=2.28-r0 && \
     GCC_LIBS_VERSION=8.2.0-2 && \
     ZLIB_VERSION=1.2.9-1 && \
-    JAVA_VERSION=11.0.1 && \
-    JAVA_BUILD=13 && \
-    JAVA_SIG=90cf5d8f270a4347a95050320eef3fb7 && \
+    JAVA_VERSION=11.0.2 && \
+    JAVA_BUILD=9 && \
+    JAVA_SIG=f51449fcd52f4d52b93a989c5c56ed3c && \
     apk --update add --no-cache ca-certificates curl openssl binutils xz && \
     curl -Ls https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub -o /etc/apk/keys/sgerrand.rsa.pub && \
     curl -Ls https://github.com/sgerrand/alpine-pkg-glibc/releases/download/"${GLIBC_VERSION}"/glibc-"${GLIBC_VERSION}".apk \
