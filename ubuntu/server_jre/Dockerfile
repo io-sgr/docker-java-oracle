@@ -6,9 +6,9 @@ ENV DEBIAN_FRONTEND=noninteractive \
     JRE_HOME=/usr/lib/jvm/java-8-oracle/jre
  
 RUN VERSION=8 && \
-    UPDATE=192 && \
-    BUILD=12 && \
-    SIG=750e1c8617c5452694857ad95c3ee230 && \
+    UPDATE=202 && \
+    BUILD=08 && \
+    SIG=1961070e4c9b4e26a04e7f5a083f551e && \
     apt-get update && apt-get dist-upgrade -y && \
     apt-get install apt-utils ca-certificates curl -y --no-install-recommends && \
     curl --silent --location --retry 3 --cacert /etc/ssl/certs/GeoTrust_Global_CA.pem \

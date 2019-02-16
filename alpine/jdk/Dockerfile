@@ -9,9 +9,9 @@ RUN GLIBC_VERSION=2.28-r0 && \
     GCC_LIBS_VERSION=8.2.0-2 && \
     ZLIB_VERSION=1.2.9-1 && \
     JAVA_VERSION=8 && \
-    JAVA_UPDATE=192 && \
-    JAVA_BUILD=12 && \
-    JAVA_SIG=750e1c8617c5452694857ad95c3ee230 && \
+    JAVA_UPDATE=202 && \
+    JAVA_BUILD=08 && \
+    JAVA_SIG=1961070e4c9b4e26a04e7f5a083f551e && \
     apk --update add --no-cache ca-certificates curl openssl binutils xz && \
     curl -Ls https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub -o /etc/apk/keys/sgerrand.rsa.pub && \
     curl -Ls https://github.com/sgerrand/alpine-pkg-glibc/releases/download/"${GLIBC_VERSION}"/glibc-"${GLIBC_VERSION}".apk \
