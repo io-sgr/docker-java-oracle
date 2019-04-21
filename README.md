@@ -3,7 +3,8 @@
 ### Branches
 
 * Active branches:
-  * `master` - Latest Java, currently version 11
+  * `master` - Latest Java, currently version 12
+  * `java11` - Java 11
   * `java8` - Java 8
 * Deprecated:
   * `java10`
@@ -24,9 +25,14 @@
 
 * Default
   * [![](https://images.microbadger.com/badges/image/sgrio/java.svg)](https://microbadger.com/images/sgrio/java) **latest**: pointed to `sgrio/java:latest_alpine`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_alpine.svg)](https://microbadger.com/images/sgrio/java:latest_alpine) **latest_alpine**: pointed to `sgrio/java:jdk_11_alpine`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_centos.svg)](https://microbadger.com/images/sgrio/java:latest_centos) **latest_centos**: pointed to `sgrio/java:jdk_11_centos`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_ubuntu.svg)](https://microbadger.com/images/sgrio/java:latest_ubuntu) **latest_ubuntu**: pointed to `sgrio/java:jdk_11_ubuntu`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_alpine.svg)](https://microbadger.com/images/sgrio/java:latest_alpine) **latest_alpine**: pointed to `sgrio/java:jdk_12_alpine`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_centos.svg)](https://microbadger.com/images/sgrio/java:latest_centos) **latest_centos**: pointed to `sgrio/java:jdk_12_centos`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_ubuntu.svg)](https://microbadger.com/images/sgrio/java:latest_ubuntu) **latest_ubuntu**: pointed to `sgrio/java:jdk_12_ubuntu`
+* Java 12
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_12.svg)](https://microbadger.com/images/sgrio/java:jdk_12) **jdk_12**: pointed to `jdk_12_alpine`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_12_alpine.svg)](https://microbadger.com/images/sgrio/java:jdk_12_alpine) **jdk_12_alpine**: `Oracle Java SE Development Kit 12.0.1 build 12` on top of **Alpine Linux**
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_12_centos.svg)](https://microbadger.com/images/sgrio/java:jdk_12_centos) **jdk_12_centos**: `Oracle Java SE Development Kit 12.0.1 build 12` on top of **CentOS**
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_12_ubuntu.svg)](https://microbadger.com/images/sgrio/java:jdk_12_ubuntu) **jdk_12_ubuntu**: `Oracle Java SE Development Kit 12.0.1 build 12` on top of **Ubuntu**
 * Java 11
   * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_11.svg)](https://microbadger.com/images/sgrio/java:jdk_11) **jdk_11**: pointed to `jdk_11_alpine`
   * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_11_alpine.svg)](https://microbadger.com/images/sgrio/java:jdk_11_alpine) **jdk_11_alpine**: `Oracle Java SE Development Kit 11.0.2 build 9` on top of **Alpine Linux**
