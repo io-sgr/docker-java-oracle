@@ -2,7 +2,7 @@ FROM centos:latest
 MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
 ENV DEBIAN_FRONTEND=noninteractive \
-    JAVA_HOME=/usr/lib/jvm/java-11-oracle
+    JAVA_HOME=/usr/lib/jvm/java-12-oracle
 
 RUN VERSION=12.0.1 && \
     BUILD=12 && \

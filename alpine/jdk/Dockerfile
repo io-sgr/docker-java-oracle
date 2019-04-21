@@ -1,8 +1,8 @@
 FROM alpine:latest
 MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
-ENV JAVA_HOME=/usr/lib/jvm/java-11-oracle \
-    PATH="/usr/lib/jvm/java-11-oracle/bin:$PATH"
+ENV JAVA_HOME=/usr/lib/jvm/java-12-oracle \
+    PATH="/usr/lib/jvm/java-12-oracle/bin:$PATH"
 
 RUN GLIBC_VERSION=2.28-r0 && \
     GCC_LIBS_VERSION=8.2.0-2 && \
