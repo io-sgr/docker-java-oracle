@@ -4,9 +4,9 @@ MAINTAINER SgrAlpha <admin@mail.sgr.io>
 ENV JAVA_HOME=/usr/lib/jvm/java-12-oracle \
     PATH="/usr/lib/jvm/java-12-oracle/bin:$PATH"
 
-RUN GLIBC_VERSION=2.28-r0 && \
-    GCC_LIBS_VERSION=8.2.0-2 && \
-    ZLIB_VERSION=1.2.9-1 && \
+RUN GLIBC_VERSION=2.29-r0 && \
+    GCC_LIBS_VERSION=8.3.0-1 && \
+    ZLIB_VERSION=1.2.11-3 && \
     JAVA_VERSION=12.0.1 && \
     JAVA_BUILD=12 && \
     JAVA_SIG=69cfe15208a647278a19ef0990eea691 && \
@@ -25,7 +25,7 @@ RUN GLIBC_VERSION=2.28-r0 && \
         | tar -xJ -C /tmp/zlib && \
     mv /tmp/zlib/usr/lib/libz.so* /usr/glibc-compat/lib && \
     apk del binutils && \
-    curl -Ls --header "Cookie: oraclelicense=accept-securebackup-cookie;" \
+    curl -Ls --cookie "oraclelicense=accept-securebackup-cookie;" \
         http://download.oracle.com/otn-pub/java/jdk/"${JAVA_VERSION}"+"${JAVA_BUILD}"/"${JAVA_SIG}"/jdk-"${JAVA_VERSION}"_linux-x64_bin.tar.gz \
         | tar xz -C /tmp && \
     mkdir -p /usr/lib/jvm && mv /tmp/jdk-${JAVA_VERSION} "${JAVA_HOME}" && \
