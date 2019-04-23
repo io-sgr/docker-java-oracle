@@ -1,9 +1,10 @@
-## Customized Docker images of Java 7/8/9/10/11
+## Customized Docker images of Java 7/8/9/10/11/12
 
 ### Branches
 
 * Active branches:
   * `master` - Latest Java, currently version 12
+* Inactive branches:
   * `java11` - Java 11
   * `java8` - Java 8
 * Deprecated:
@@ -15,7 +16,7 @@
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Go to `<os>/jdk/`, run `docker build -t <image_name:tag> .`, you can use your favorite image and tag name.
+2. Run `docker build -t <image_name:tag> ./<os>/jdk/`, you can also use your favorite image and tag name.
 
 3. Test the image you built, `docker run -it --rm <image_name:tag> java -version`.
 
