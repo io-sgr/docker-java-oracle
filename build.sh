@@ -8,7 +8,7 @@ docker pull centos:latest
 docker build -t sgrio/java:jdk_12_centos centos/jdk/
 docker tag sgrio/java:jdk_12_centos sgrio/java:latest_centos
 
-docker pull centos:latest
+docker pull ubuntu:latest
 docker build -t sgrio/java:jdk_12_ubuntu ubuntu/jdk/
 docker tag sgrio/java:jdk_12_ubuntu sgrio/java:latest_ubuntu
 
