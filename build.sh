@@ -1,5 +1,14 @@
 #!/usr/bin/env sh
-  
+
+docker pull sgrio/java:latest
+docker pull sgrio/java:jdk_12
+docker pull sgrio/java:latest_alpine
+docker pull sgrio/java:jdk_12_alpine
+docker pull sgrio/java:latest_centos
+docker pull sgrio/java:jdk_12_centos
+docker pull sgrio/java:latest_ubuntu
+docker pull sgrio/java:jdk_12_ubuntu
+
 docker pull alpine:latest
 docker build -t sgrio/java:jdk_12_alpine alpine/jdk/
 docker tag sgrio/java:jdk_12_alpine sgrio/java:latest_alpine
