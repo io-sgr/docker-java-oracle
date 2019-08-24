@@ -1,9 +1,11 @@
-## Customized Docker images of Java 7/8/9/10/11
+## Customized Docker images of Java 7/8/9/10/11/12
 
 ### Branches
 
 * Active branches:
-  * `master` - Latest Java, currently version 11
+  * `master` - Latest Java, currently version 12
+* Inactive branches:
+  * `java11` - Java 11
   * `java8` - Java 8
 * Deprecated:
   * `java10`
@@ -14,7 +16,7 @@
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Go to `<os>/jdk/`, run `docker build -t <image_name:tag> .`, you can use your favorite image and tag name.
+2. Run `docker build -t <image_name:tag> ./<os>/jdk/`, you can also use your favorite image and tag name.
 
 3. Test the image you built, `docker run -it --rm <image_name:tag> java -version`.
 
@@ -24,9 +26,14 @@
 
 * Default
   * [![](https://images.microbadger.com/badges/image/sgrio/java.svg)](https://microbadger.com/images/sgrio/java) **latest**: pointed to `sgrio/java:latest_alpine`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_alpine.svg)](https://microbadger.com/images/sgrio/java:latest_alpine) **latest_alpine**: pointed to `sgrio/java:jdk_11_alpine`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_centos.svg)](https://microbadger.com/images/sgrio/java:latest_centos) **latest_centos**: pointed to `sgrio/java:jdk_11_centos`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_ubuntu.svg)](https://microbadger.com/images/sgrio/java:latest_ubuntu) **latest_ubuntu**: pointed to `sgrio/java:jdk_11_ubuntu`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_alpine.svg)](https://microbadger.com/images/sgrio/java:latest_alpine) **latest_alpine**: pointed to `sgrio/java:jdk_12_alpine`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_centos.svg)](https://microbadger.com/images/sgrio/java:latest_centos) **latest_centos**: pointed to `sgrio/java:jdk_12_centos`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_ubuntu.svg)](https://microbadger.com/images/sgrio/java:latest_ubuntu) **latest_ubuntu**: pointed to `sgrio/java:jdk_12_ubuntu`
+* Java 12
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_12.svg)](https://microbadger.com/images/sgrio/java:jdk_12) **jdk_12**: pointed to `jdk_12_alpine`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_12_alpine.svg)](https://microbadger.com/images/sgrio/java:jdk_12_alpine) **jdk_12_alpine**: `Oracle Java SE Development Kit 12.0.2 build 10` on top of **Alpine Linux**
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_12_centos.svg)](https://microbadger.com/images/sgrio/java:jdk_12_centos) **jdk_12_centos**: `Oracle Java SE Development Kit 12.0.2 build 10` on top of **CentOS**
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_12_ubuntu.svg)](https://microbadger.com/images/sgrio/java:jdk_12_ubuntu) **jdk_12_ubuntu**: `Oracle Java SE Development Kit 12.0.2 build 10` on top of **Ubuntu**
 * Java 11
   * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_11.svg)](https://microbadger.com/images/sgrio/java:jdk_11) **jdk_11**: pointed to `jdk_11_alpine`
   * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_11_alpine.svg)](https://microbadger.com/images/sgrio/java:jdk_11_alpine) **jdk_11_alpine**: `Oracle Java SE Development Kit 11.0.2 build 9` on top of **Alpine Linux**
