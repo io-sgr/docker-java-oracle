@@ -5,9 +5,9 @@ ENV DEBIAN_FRONTEND=noninteractive \
     JAVA_HOME=/usr/lib/jvm/java-13-oracle
 
 RUN \
-    JAVA_VERSION=13 && \
-    JAVA_BUILD=33 && \
-    JAVA_SIG=5b8a42f3905b406298b72d750b6919f6 && \
+    JAVA_VERSION=13.0.1 && \
+    JAVA_BUILD=9 && \
+    JAVA_SIG=cec27d702aa74d5a8630c65ae61e4305 && \
     yum -y update && \
     curl --silent --location --retry 3 \
         --header "Cookie: oraclelicense=accept-securebackup-cookie;" \
