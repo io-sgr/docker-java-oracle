@@ -5,9 +5,9 @@ ENV DEBIAN_FRONTEND=noninteractive \
     JAVA_HOME=/usr/lib/jvm/java-13-oracle
 
 RUN \
-    JAVA_VERSION=13.0.1 && \
-    JAVA_BUILD=9 && \
-    JAVA_SIG=cec27d702aa74d5a8630c65ae61e4305 && \
+    JAVA_VERSION=13.0.2 && \
+    JAVA_BUILD=8 && \
+    JAVA_SIG=d4173c853231432d94f001e99d882ca7 && \
     apt-get update && apt-get dist-upgrade -y && \
     apt-get install apt-utils ca-certificates curl -y --no-install-recommends && \
     curl --silent --location --retry 3 --cacert /etc/ssl/certs/GeoTrust_Global_CA.pem \
