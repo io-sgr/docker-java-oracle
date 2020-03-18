@@ -4,9 +4,9 @@ MAINTAINER SgrAlpha <admin@mail.sgr.io>
 ENV JAVA_HOME=/usr/lib/jvm/java-13-oracle \
     PATH="/usr/lib/jvm/java-13-oracle/bin:$PATH"
 
-RUN GLIBC_VERSION=2.29-r0 && \
-    GCC_LIBS_VERSION=8.3.0-1 && \
-    ZLIB_VERSION=1.2.11-3 && \
+RUN GLIBC_VERSION=2.31-r0 && \
+    GCC_LIBS_VERSION=9.3.0-1 && \
+    ZLIB_VERSION=1.2.11-4 && \
     JAVA_VERSION=13.0.2 && \
     JAVA_BUILD=8 && \
     JAVA_SIG=d4173c853231432d94f001e99d882ca7 && \
