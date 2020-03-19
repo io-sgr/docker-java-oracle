@@ -5,7 +5,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-13-oracle \
     PATH="/usr/lib/jvm/java-13-oracle/bin:$PATH"
 
 RUN GLIBC_VERSION=2.31-r0 && \
-    GCC_LIBS_VERSION=9.3.0-1 && \
+    GCC_LIBS_VERSION=9.2.0-4 && \
     ZLIB_VERSION=1.2.11-4 && \
     JAVA_VERSION=13.0.2 && \
     JAVA_BUILD=8 && \
