@@ -2,12 +2,12 @@ FROM ubuntu:latest
 MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
 ENV DEBIAN_FRONTEND=noninteractive \
-    JAVA_HOME=/usr/lib/jvm/java-13-oracle
+    JAVA_HOME=/usr/lib/jvm/java-14-oracle
 
 RUN \
-    JAVA_VERSION=13.0.2 && \
-    JAVA_BUILD=8 && \
-    JAVA_SIG=d4173c853231432d94f001e99d882ca7 && \
+    JAVA_VERSION=14.0.1 && \
+    JAVA_BUILD=7 && \
+    JAVA_SIG=664493ef4a6946b186ff29eb326336a2 && \
     apt-get update && apt-get dist-upgrade -y && \
     apt-get install apt-utils ca-certificates curl -y --no-install-recommends && \
     curl --silent --location --retry 3 --cacert /etc/ssl/certs/GeoTrust_Global_CA.pem \

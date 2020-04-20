@@ -1,13 +1,14 @@
-## Customized Docker images of Java 7/8/9/10/11/12/13
+## Customized Docker images of Java 8/11/14
 
 ### Branches
 
 * Active branches:
-  * `master` - Latest Java, currently version 13.0.2
+  * `master` - Latest Java, currently version 14.0.1
 * Inactive branches:
   * `java11` - Java 11
   * `java8` - Java 8
 * Deprecated:
+  * `java13`
   * `java12`
   * `java10`
   * `java9`
@@ -27,14 +28,14 @@
 
 * Default
   * [![](https://images.microbadger.com/badges/image/sgrio/java.svg)](https://microbadger.com/images/sgrio/java) **latest**: pointed to `sgrio/java:latest_alpine`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_alpine.svg)](https://microbadger.com/images/sgrio/java:latest_alpine) **latest_alpine**: pointed to `sgrio/java:jdk_13_alpine`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_centos.svg)](https://microbadger.com/images/sgrio/java:latest_centos) **latest_centos**: pointed to `sgrio/java:jdk_13_centos`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_ubuntu.svg)](https://microbadger.com/images/sgrio/java:latest_ubuntu) **latest_ubuntu**: pointed to `sgrio/java:jdk_13_ubuntu`
-* Java 13
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_13.svg)](https://microbadger.com/images/sgrio/java:jdk_13) **jdk_13**: pointed to `jdk_13_alpine`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_13_alpine.svg)](https://microbadger.com/images/sgrio/java:jdk_13_alpine) **jdk_13_alpine**: `Oracle Java SE Development Kit 13.0.2 build 8` on top of **Alpine Linux**
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_13_centos.svg)](https://microbadger.com/images/sgrio/java:jdk_13_centos) **jdk_13_centos**: `Oracle Java SE Development Kit 13.0.2 build 8` on top of **CentOS**
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_13_ubuntu.svg)](https://microbadger.com/images/sgrio/java:jdk_13_ubuntu) **jdk_13_ubuntu**: `Oracle Java SE Development Kit 13.0.2 build 8` on top of **Ubuntu**
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_alpine.svg)](https://microbadger.com/images/sgrio/java:latest_alpine) **latest_alpine**: pointed to `sgrio/java:jdk_14_alpine`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_centos.svg)](https://microbadger.com/images/sgrio/java:latest_centos) **latest_centos**: pointed to `sgrio/java:jdk_14_centos`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_ubuntu.svg)](https://microbadger.com/images/sgrio/java:latest_ubuntu) **latest_ubuntu**: pointed to `sgrio/java:jdk_14_ubuntu`
+* Java 14
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_14.svg)](https://microbadger.com/images/sgrio/java:jdk_14) **jdk_14**: pointed to `jdk_14_alpine`
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_14_alpine.svg)](https://microbadger.com/images/sgrio/java:jdk_14_alpine) **jdk_14_alpine**: `Oracle Java SE Development Kit 14.0.1 build 7` on top of **Alpine Linux**
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_14_centos.svg)](https://microbadger.com/images/sgrio/java:jdk_14_centos) **jdk_14_centos**: `Oracle Java SE Development Kit 14.0.1 build 7` on top of **CentOS**
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_14_ubuntu.svg)](https://microbadger.com/images/sgrio/java:jdk_14_ubuntu) **jdk_14_ubuntu**: `Oracle Java SE Development Kit 14.0.1 build 7` on top of **Ubuntu**
 * Java 11
   * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_11.svg)](https://microbadger.com/images/sgrio/java:jdk_11) **jdk_11**: pointed to `jdk_11_alpine`
   * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_11_alpine.svg)](https://microbadger.com/images/sgrio/java:jdk_11_alpine) **jdk_11_alpine**: `Oracle Java SE Development Kit 11.0.2 build 9` on top of **Alpine Linux**
