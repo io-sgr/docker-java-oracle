@@ -3,7 +3,7 @@
 ### Branches
 
 * Active branches:
-  * `master` - Latest Java, currently version 14.0.1
+  * `master` - Latest Java, currently version 14.0.2
 * Inactive branches:
   * `java11` - Java 11
   * `java8` - Java 8
@@ -33,9 +33,9 @@
   * [![](https://images.microbadger.com/badges/image/sgrio/java:latest_ubuntu.svg)](https://microbadger.com/images/sgrio/java:latest_ubuntu) **latest_ubuntu**: pointed to `sgrio/java:jdk_14_ubuntu`
 * Java 14
   * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_14.svg)](https://microbadger.com/images/sgrio/java:jdk_14) **jdk_14**: pointed to `jdk_14_alpine`
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_14_alpine.svg)](https://microbadger.com/images/sgrio/java:jdk_14_alpine) **jdk_14_alpine**: `Oracle Java SE Development Kit 14.0.1 build 7` on top of **Alpine Linux**
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_14_centos.svg)](https://microbadger.com/images/sgrio/java:jdk_14_centos) **jdk_14_centos**: `Oracle Java SE Development Kit 14.0.1 build 7` on top of **CentOS**
-  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_14_ubuntu.svg)](https://microbadger.com/images/sgrio/java:jdk_14_ubuntu) **jdk_14_ubuntu**: `Oracle Java SE Development Kit 14.0.1 build 7` on top of **Ubuntu**
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_14_alpine.svg)](https://microbadger.com/images/sgrio/java:jdk_14_alpine) **jdk_14_alpine**: `Oracle Java SE Development Kit 14.0.2 build 12` on top of **Alpine Linux**
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_14_centos.svg)](https://microbadger.com/images/sgrio/java:jdk_14_centos) **jdk_14_centos**: `Oracle Java SE Development Kit 14.0.2 build 12` on top of **CentOS**
+  * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_14_ubuntu.svg)](https://microbadger.com/images/sgrio/java:jdk_14_ubuntu) **jdk_14_ubuntu**: `Oracle Java SE Development Kit 14.0.2 build 12` on top of **Ubuntu**
 * Java 11
   * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_11.svg)](https://microbadger.com/images/sgrio/java:jdk_11) **jdk_11**: pointed to `jdk_11_alpine`
   * [![](https://images.microbadger.com/badges/image/sgrio/java:jdk_11_alpine.svg)](https://microbadger.com/images/sgrio/java:jdk_11_alpine) **jdk_11_alpine**: `Oracle Java SE Development Kit 11.0.2 build 9` on top of **Alpine Linux**

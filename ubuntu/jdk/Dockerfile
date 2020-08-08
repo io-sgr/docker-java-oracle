@@ -5,13 +5,13 @@ ENV DEBIAN_FRONTEND=noninteractive \
     JAVA_HOME=/usr/lib/jvm/java-14-oracle
 
 RUN \
-    JAVA_VERSION=14.0.1 && \
-    JAVA_BUILD=7 && \
-    JAVA_SIG=664493ef4a6946b186ff29eb326336a2 && \
+    JAVA_VERSION=14.0.2 && \
+    JAVA_BUILD=12 && \
+    JAVA_SIG=205943a0976c4ed48cb16f1043c5c647 && \
     apt-get update && apt-get dist-upgrade -y && \
     apt-get install apt-utils ca-certificates curl -y --no-install-recommends && \
-    curl --silent --location --retry 3 --cacert /etc/ssl/certs/GeoTrust_Global_CA.pem \
-        --header "Cookie: oraclelicense=accept-securebackup-cookie;" \
+    curl -Ls \
+        --cookie "oraclelicense=accept-securebackup-cookie;" \
         http://download.oracle.com/otn-pub/java/jdk/"${JAVA_VERSION}"+"${JAVA_BUILD}"/"${JAVA_SIG}"/jdk-"${JAVA_VERSION}"_linux-x64_bin.tar.gz \
         | tar xz -C /tmp && \
     mkdir -p /usr/lib/jvm && mv /tmp/jdk-"${JAVA_VERSION}" "${JAVA_HOME}" && \

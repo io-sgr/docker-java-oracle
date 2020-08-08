@@ -7,9 +7,9 @@ ENV JAVA_HOME=/usr/lib/jvm/java-14-oracle \
 RUN GLIBC_VERSION=2.31-r0 && \
     GCC_LIBS_VERSION=9.2.0-4 && \
     ZLIB_VERSION=1.2.11-4 && \
-    JAVA_VERSION=14.0.1 && \
-    JAVA_BUILD=7 && \
-    JAVA_SIG=664493ef4a6946b186ff29eb326336a2 && \
+    JAVA_VERSION=14.0.2 && \
+    JAVA_BUILD=12 && \
+    JAVA_SIG=205943a0976c4ed48cb16f1043c5c647 && \
     apk --update add --no-cache ca-certificates curl openssl binutils xz && \
     curl -Ls https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub -o /etc/apk/keys/sgerrand.rsa.pub && \
     curl -Ls https://github.com/sgerrand/alpine-pkg-glibc/releases/download/"${GLIBC_VERSION}"/glibc-"${GLIBC_VERSION}".apk \
