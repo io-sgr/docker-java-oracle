@@ -2,12 +2,12 @@ FROM centos:latest
 MAINTAINER SgrAlpha <admin@mail.sgr.io>
 
 ENV DEBIAN_FRONTEND=noninteractive \
-    JAVA_HOME=/usr/lib/jvm/java-14-oracle
+    JAVA_HOME=/usr/lib/jvm/java-15-oracle
 
 RUN \
-    JAVA_VERSION=14.0.2 && \
-    JAVA_BUILD=12 && \
-    JAVA_SIG=205943a0976c4ed48cb16f1043c5c647 && \
+    JAVA_VERSION=15.0.2 && \
+    JAVA_BUILD=7 && \
+    JAVA_SIG=0d1cfde4252546c6931946de8db48ee2 && \
     yum -y update && \
     curl --silent --location --retry 3 \
         --header "Cookie: oraclelicense=accept-securebackup-cookie;" \
