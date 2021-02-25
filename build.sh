@@ -21,7 +21,7 @@ docker pull ubuntu:latest
 docker build -t sgrio/java:jdk_15_ubuntu ubuntu/jdk/
 docker tag sgrio/java:jdk_15_ubuntu sgrio/java:latest_ubuntu
 
-docker tag sgrio/java:jdk_15_alpine sgrio/java:jdk_14
+docker tag sgrio/java:jdk_15_alpine sgrio/java:jdk_15
 docker tag sgrio/java:jdk_15 sgrio/java:latest
 
 docker push sgrio/java:jdk_15_alpine
